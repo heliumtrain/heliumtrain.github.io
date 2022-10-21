@@ -1,0 +1,18 @@
+p > a {
+    background-image: linear-gradient(to right, currentColor, currentColor);
+    background-position: 0 100%;
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    transition: 0.4s background-size cubic-bezier(0, 0, 0, 1);
+    color: #32acff;
+    text-decoration: none;
+
+    &:hover {
+        background-size: 100% 1px;
+    }
+
+    &:active {
+        color: #1e6bc7;
+    }
+
+}

@@ -1,0 +1,23 @@
+html {
+    background-color: $page-background-color;
+    color: $page-foreground-color;
+
+    font-family: $base-font-family;
+    font-size: 14px;
+}
+
+p {
+    margin-bottom: 1em;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.prose {
+    font-size: 14px;
+
+    @include respond-to('medium') {
+        font-size: 18px;
+    }
+}

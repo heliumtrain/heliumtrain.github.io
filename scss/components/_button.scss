@@ -1,0 +1,49 @@
+@keyframes buttonShine {
+    0% { transform: translateX(-100%)  skew(-30deg); }
+    100% { transform: translateX(500%)  skew(-30deg); }
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: #1e3a8a;
+    background-image: linear-gradient(#1e6bc7 0%, #1e3a8a 100%);
+    text-decoration: none;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1);
+    overflow: hidden;
+    transition: filter .5s cubic-bezier(.1,.7,.1,1);
+
+    &:hover {
+        filter: brightness(1.33);
+    }
+
+    &:active {
+        background-image: none;
+        transition: none;
+        filter: none;
+    }
+
+}
+
+    .button__text {
+        position: relative;
+        z-index: 2;
+    }
+
+.button--shine::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-image:linear-gradient(to right, rgba(50,172,255,0) 5%, #32acff 50%, rgba(50,172,255,0) 95%);
+    transform: skew(-30deg);
+    animation: buttonShine 6s linear infinite;
+    opacity: .25;
+}

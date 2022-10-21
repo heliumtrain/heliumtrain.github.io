@@ -1,0 +1,25 @@
+.sponsor-section__title {
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #64748b;
+}
+
+.sponsor-section__logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    gap: 24px;
+
+    @include respond-to('medium') {
+        gap: 32px;
+    }
+
+    img {
+        width: auto;
+    }
+
+}

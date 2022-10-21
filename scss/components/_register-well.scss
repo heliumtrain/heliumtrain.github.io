@@ -1,0 +1,10 @@
+.register-well {
+    padding: 24px;
+    text-align: center;
+    background-color: lighten(#1e293b, 3%);
+    border-radius: 8px;
+
+    @include respond-to('small') {
+        padding: 32px;
+    }
+}
