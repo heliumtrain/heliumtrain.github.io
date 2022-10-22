@@ -392,6 +392,21 @@ p > a:active {
   width: auto;
 }
 
+.speaker-section__speaker_card a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.speaker-section__speaker_card img {
+  display: inline-block;
+  margin-left: 0.25rem;
+  height: 12px;
+}
+
+.speaker-section__speaker_name {
+  display: inline-block;
+}
+
 .register-well {
   padding: 24px;
   text-align: center;

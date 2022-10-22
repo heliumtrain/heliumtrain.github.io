@@ -1,0 +1,9 @@
+Building:
+
+```shell
+npm install
+```
+Then
+```shell
+npm run gulp
+```
